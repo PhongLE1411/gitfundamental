@@ -1,3 +1,3 @@
 # GIT FUNDAMENTAL COMMANDLINEs
-## Git Clone
-## Git Branch
+## 1. Git Clone
+## 2. Git Branch
