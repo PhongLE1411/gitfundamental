@@ -185,11 +185,14 @@ Example: I would like to squash/merge 3 first commits into one commit.
  
  4. Save and close the dialog. Another dialog will be shown.
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash_step4.png)
+
  Delete all messages except the first message. You can amend the first message if you like.
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash_step4_2.png)
+
  Save and close the dialog.
  5. Check your log history now by using `git log`
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash_step5.png)
+
  To quite log history, please type `letter q`
  7. Finally, update to remote repo by using push command.
 	`git push -f`
