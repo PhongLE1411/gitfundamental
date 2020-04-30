@@ -190,10 +190,12 @@ Example: I would like to squash/merge 3 first commits into one commit.
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash_step4_2.png)
 
  Save and close the dialog.
+ 
  5. Check your log history now by using `git log`
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash_step5.png)
 
  To quite log history, please type `letter q`
+ 
  7. Finally, update to remote repo by using push command.
 	`git push -f`
  8. Done!
@@ -203,8 +205,11 @@ Example: I would like to squash/merge 3 first commits into one commit.
 When you create new branch (hotfix) from a branch (master), master branch has 5 versions at this time. After a few day, there are some branches are merged into master branch, it means the master version is different your branch version.
 	Now, you want to be all versions of master are merged into your branch. You can use `rebase command`.Why do you you use `rebase` instead of `merge`. Because we want to be your branch versions is on the top of master version. For instance,  
 	master branch: C0->C1->C2->C3->C4->C5->C6->C7
+	
 	your branch: C0->C1->C2->C3->C4->C5->C1'->C2'
+	
 After rebase, your branch will be:
+
 C0->C1->C2->C3->C4->C5->C6->C7`->C1'->C2'`
 
 Please following the below steps:
