@@ -203,25 +203,22 @@ Example: I would like to squash/merge 3 first commits into one commit.
 
 ## 15. Update latest source code from a branch to your branch.
 When you create new branch (hotfix) from a branch (master), master branch has 5 versions at this time. After a few day, there are some branches are merged into master branch, it means the master version is different your branch version.
-	Now, you want to be all versions of master are merged into your branch. You can use `rebase command`.Why do you you use `rebase` instead of `merge`. Because we want to be your branch versions is on the top of master version. For instance,  
-	master branch: C0->C1->C2->C3->C4->C5->C6->C7
-	
-	your branch: C0->C1->C2->C3->C4->C5->C1'->C2'
-	
-After rebase, your branch will be:
+	Now, you want to be all versions of master are merged into your branch. You can use `rebase command`.Why do you you use `rebase` instead of `merge`. Because we want to be your branch versions is on the top of master version. For instance,  you want to update latest source code of master branch for your branch (development branch).
 
-C0->C1->C2->C3->C4->C5->C6->C7`->C1'->C2'`
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/update_before.png)
 
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/update_after.png)
+	
 Please following the below steps:
 
  1. Get latest source code which you want to rebase from (e.g.: master)
 `git checkout master`
 `git pull`
- 2. Switch to your branch (e.g.: hotfix)
-	`git checkout hotfix`
+ 2. Switch to your branch (e.g.: development)
+	`git checkout development`
 	`git pull`
- 3. Start rebase from master to hotfix branch.
- NOTE: make sure that you are at your branch (hotfix branch). You can check by: `git branch` (your current branch is in green)
+ 3. Start rebase from master to development branch.
+ NOTE: make sure that you are at your branch (development branch). You can check by: `git branch` (your current branch is in green)
 3.1. REBASE
 `git rebase master`
 If there are any conflicts. Please resolve them. You can resolve by manual or tool. In here, I use kdiff tool and use command to resolve.
