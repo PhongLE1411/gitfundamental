@@ -105,7 +105,9 @@ If you want to add all files/directories. You can use `git add -A`
 	Command: git commit -am <your message>
 
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/repo_current.png)
+
 After commit
+
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/repo_add.png)
 
 ## 7. Git Push
