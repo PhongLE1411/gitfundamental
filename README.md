@@ -132,9 +132,11 @@ Same as the above command, but only fetch the specified branch.
 `Git merge` will combine multiple sequences of commits into one unified history. In the most frequent use cases, `git merge` is used to combine two branches. The following examples in this document will focus on this branch merging pattern. In these scenarios, `git merge` takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.
 
 Before:
+
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_merge_before.png)
 
 After:
+
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_merge.png)
 ## 10. Git Rebase
 Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.
@@ -142,9 +144,11 @@ Rebasing is the process of moving or combining a sequence of commits to a new ba
 	Command: git rebase <base>
 
 Before:
+
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_rebase_before.png)
 
 After:
+
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_rebase.png)
 ## 11. Git Reset
 On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch
