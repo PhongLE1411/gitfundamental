@@ -1,11 +1,7 @@
 # Welcome Git Fundamental
-
-## 1. What is Git
-	Command: git clone <repo> <directory>
-Clone the repository located at `<repo>` into the folder called \<directory> on the local machine. 
-
-	Example: git clone https://github.com/PhongLE1411/gitfundamental.git C:\Github\gitfundamental
- 
+# Table of Content
+- [1. What is Git](#1. What is Git)
+- [2. How It Works](#2. How It Works)
 
 ## 1. What is Git			
  - A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
