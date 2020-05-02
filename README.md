@@ -1,4 +1,4 @@
-# Welcome Git Fundamental 
+# Welcome Git Fundamental
 
 ## 1. What is Git
 	Command: git clone <repo> <directory>
@@ -236,4 +236,35 @@ If there are any conflicts. Please resolve them. You can resolve by manual or to
  7. WELL DONE 
 
 ## 15. Checking the Status of Your Files
-## 16. Git Clean  
+The main tool you use to determine which files are in which state is the git status command. If you run this command directly after a clone, you should see something like this:
+
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_clean.png)	 
+	
+Let’s say you add a new file to your project, a simple README file. If the file didn’t exist before, and you run git status, you see your untracked file like so:
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_untracked.png)
+
+In order to begin tracking a new file, you use the command git add. To begin tracking the README.txt file, you can run this:
+
+	git add README.txt
+	
+If you run your status command again, you can see that your README file is now tracked and staged to be committed:
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_tracked.png)
+
+You can tell that it’s staged because it’s under the “Changes to be committed” heading.	
+Let’s change a file that was already tracked. If you change a previously tracked file called README.md and then run your git status command again, you get something that looks like this:
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_modified.png)	
+	
+The README.md file appears under a section named "Changes not staged for commit" - which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the git add command. git add is a multipurpose command - you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved. It may be helpful to think of it more as "add precisely this content to the next commit" rather than “add this file to the project”. Let’s run git add now to stage the README.md file, and then run git status again:
+
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_modified_staged.png)	
+	
+Both files are staged and will go into your next commit. At this point, suppose you remember one little change that you want to make in README.md before you commit it. You open it again and make that change, and you’re ready to commit.
+
+Now that your staging area is set up the way you want it, you can commit your changes. Remember that anything that is still unstaged - any files you have created or modified that you haven’t run git add on since you edited them - won’t go into this commit. They will stay as modified files on your disk. In this case, let’s say that the last time you ran git status, you saw that everything was staged, so you’re ready to commit your changes. The simplest way to commit is to type git commit and check status again.
+
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_commit.png)	
+	
+Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (master), what SHA-1 checksum the commit has (463dc4f), how many files were changed, and statistics about lines added and removed in the commit.
+	
+If you want to be your change is commited to remote repo. Please run git push.
+![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_push.png)
