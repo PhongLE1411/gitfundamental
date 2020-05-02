@@ -1,7 +1,9 @@
 # Welcome Git Fundamental
-# Table of Content
-- [1. What is Git](#1. What is Git)
-- [2. How It Works](#2. How It Works)
+##### Table of Contents  
+- [1. What is Git](#1.-What-is-Git)
+- [2. How It Works](#2.-How-It-Works)
+  * [2.1 State](#2.1-State)
+  * [2.2 Flow](#2.2-Flow)
 
 ## 1. What is Git			
  - A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -20,7 +22,7 @@ This leads us to the three main sections of a Git project: the working directory
  - The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.
  - The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.
  - The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.
-### 1.2 Flow
+### 2.2 Flow
 The basic Git workflow goes something like this:
  - You modify files in your working directory.
  - You stage the files, adding snapshots of them to your staging area.
@@ -29,7 +31,7 @@ The basic Git workflow goes something like this:
 - Finally you push your local repository to the remote repository.
 
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/flow.png)
-### 1.3 File status life circle
+### 2.3 File status life circle
 Remember that each file in your working directory can be in one of two states:  _tracked_  or  _untracked_. Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.
 
 Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.
