@@ -268,3 +268,9 @@ Now you’ve created your first commit! You can see that the commit has given yo
 	
 If you want to be your change is commited to remote repo. Please run git push.
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/f_status_push.png)
+
+## 16. Clean Working Directory 
+Sometimes, you want to clean your Working Directory, it means there is no unstaged files, modifed files in your Working Directory. You can run some commands below:
+
+	git reset --hard
+	git clean -f -d
