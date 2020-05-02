@@ -1,4 +1,4 @@
-# Welcome Git Fundamental
+# Welcome Git Fundamental 
 
 ## 1. What is Git
 	Command: git clone <repo> <directory>
