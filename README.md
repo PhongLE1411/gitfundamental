@@ -1,9 +1,10 @@
 # Welcome Git Fundamental
 ##### Table of Contents  
-- [1. What is Git](#1.-What-is-Git)
-- [2. How It Works](#2.-How-It-Works)
-  * [2.1 State](#2.1-State)
-  * [2.2 Flow](#2.2-Flow)
+- [1. What is Git](#1-what-is-git)
+- [2. How It Works](#2-how-it-works)
+  * [2.1 State](#21-state)
+  * [2.2 Flow](#22-flow)
+  * [2.3 File status life circle](#23-file-status-life-circle)
 
 ## 1. What is Git			
  - A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
