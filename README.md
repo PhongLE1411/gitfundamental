@@ -60,10 +60,10 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/lifecycle.png)
 
 ## 3. Clone Repository
-	Command:
-	```diff
-	+ git clone  <repo> <directory>
-	```
+Command:
+```diff
++ git clone  <repo> <directory>
+```
 
 Clone the repository located at `<repo>` into the folder called `~<directory>!` on the local machine.
 		
