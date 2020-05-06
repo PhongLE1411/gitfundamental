@@ -5,7 +5,24 @@
   * [2.1 State](#21-state)
   * [2.2 Flow](#22-flow)
   * [2.3 File status life circle](#23-file-status-life-circle)
-  
+- [3. Clone Repository](#3-clone-repository)
+- [4. Create Branch](#4-create-branch)
+- [5. Delete Branch](#5-delete-branch)
+  * [5.1 Delete local branch](#51-delete-local-branch)
+  * [5.2 Delete remote branch](#52-delete-remote-branch)  
+- [6. Checkout Branch](#6-checkout-branch)
+- [7. Git Add & Commit](#7-git-add--commit)
+- [8. Git Push](#8-git-push)
+- [9. Git Fetch](#9-git-fetch)
+- [10. Git Merge](#10-git-merge)
+- [11. Git Rebase](#11-git-rebase)
+- [12. Git Reset](#12-git-reset)
+- [13. Git Revert](#13-git-revert)
+- [14. Git Cherry-Pick](#14-git-cherry-pick)
+- [15. Git Squash](#15-git-squash)
+- [16. Update latest source code from a branch to your branch](#16-update-latest-source-code-from-a-branch-to-your-branch)
+- [17. Checking the Status of Your Files](#17-checking-the-status-of-your-files)
+- [18. Clean Working Directory](#18-clean-working-directory)
 
 ## 1. What is Git			
  - A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -201,7 +218,7 @@ Example: I would like to squash/merge 3 first commits into one commit.
  8. Done!
 ![enter image description here](https://github.com/PhongLE1411/gitfundamental/blob/master/Images/git_squash.png)
 
-## 16. Update latest source code from a branch to your branch.
+## 16. Update latest source code from a branch to your branch
 When you create new branch (hotfix) from a branch (master), master branch has 5 versions at this time. After a few day, there are some branches are merged into master branch, it means the master version is different your branch version.
 	Now, you want to be all versions of master are merged into your branch. You can use `rebase command`.Why do you you use `rebase` instead of `merge`. Because we want to be your branch versions is on the top of master version. For instance,  you want to update latest source code of master branch for your branch (development branch).
 
