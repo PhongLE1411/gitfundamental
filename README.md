@@ -240,11 +240,16 @@ Please following the below steps:
 `git rebase master`
 If there are any conflicts. Please resolve them. You can resolve by manual or tool. In here, I use kdiff tool and use command to resolve.
 3.2. Resolve conflicts
+
 	3.2.1. `git mergetool`
 	After that, there is a editor is shown, you must resolve. After they are resolved. Continue with next step.
+	
 	3.2.2. `git add -A`
+	
 	3.2.3. `git rebase --continue`
+	
 	If there are still some conflicts. Do again step 3.2.1 to 3.2.3 until there is no conflict.
+	
  4. Check history after rebase.
  `git log`
  Note: If you want to exist log, type letter "q"
